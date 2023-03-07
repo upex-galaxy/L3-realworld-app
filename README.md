@@ -1,33 +1,17 @@
+[![vscode-logo]][vscode-site] [![typescript-logo]][typescript-site]
+
 <p align="center">
-  <img alt="Cypress Real World App Logo" src="./src/svgs/rwa-logo.svg" />
+  <img alt="UPEX Real World App Logo" src="https://user-images.githubusercontent.com/91127281/223495630-0fd71eb8-5cb9-401b-a76e-0001e6debbf2.png" width="" height="400"/>
 </p>
 
 <p align="center">
-  <a href="https://cypress.io">
-    <img width="140" alt="Cypress Logo" src="./src/svgs/built-by-cypress.svg" />
+  <a href="https://upexwork.com">
+    <img width="140" alt="UPEX L3 Logo" src="https://user-images.githubusercontent.com/91127281/223495974-b7eba7ce-3a37-42cc-b5b4-c80dfcbf9d74.png" />
     </a>
 </p>
 
 <p align="center">
-   <a href="https://cloud.cypress.io/projects/7s5okt/runs">
-    <img src="https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/detailed/7s5okt/develop&style=flat&logo=cypress" />
-  </a>
-
-  <a href="https://codecov.io/gh/cypress-io/cypress-realworld-app">
-    <img src="https://codecov.io/gh/cypress-io/cypress-realworld-app/branch/develop/graph/badge.svg" />
-  </a>
-
-  <a href="https://percy.io/cypress-io/cypress-realworld-app">
-    <img src="https://percy.io/static/images/percy-badge.svg" />
-  </a>
-  
-   <a href="#contributors-">
-    <img src="https://img.shields.io/badge/all_contributors-6-green.svg?style=flat" />
-  </a>
-</p>
-
-<p align="center">
-A payment application to demonstrate <strong>real-world</strong> usage of <a href="https://cypress.io">Cypress</a> testing methods, patterns, and workflows.
+A payment application to demonstrate <strong>real-world</strong> usage of Manual or Automation testing methods, patterns, and workflows.
 </p>
 
 <p align="center">
@@ -305,3 +289,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!!
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[vscode-logo]: https://img.shields.io/badge/VSCode-black?logo=visualstudiocode&style=for-the-badge
+[vscode-site]: https://code.visualstudio.com/
+[playwright-logo]: https://img.shields.io/badge/Playwright-black?logo=playwright&style=for-the-badge
+[playwright-site]: https://playwright.dev/docs/writing-tests
+[typescript-logo]: https://img.shields.io/badge/TypeScript-black?logo=typescript&style=for-the-badge
+[typescript-site]: https://www.typescriptlang.org

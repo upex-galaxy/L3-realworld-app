@@ -50,8 +50,57 @@ A payment application to demonstrate <strong>real-world</strong> usage of <a hre
 👮‍♂️ Local Authentication  
 🔥 Database Seeding with End-to-end Tests  
 💻 CI/CD + [Cypress Cloud][cypresscloud]
+___
+# Getting Started (versión UPEX)
+PASO A PASO by Ely:
 
-## Getting Started
+1. PRIMERO debemos tener la versión de NODE: 16.14.2
+<br> **Cómo instalar y usar esa versión?**
+
+2. Necesitamos: **NVM** (paquete de node para  instalar)
+
+3. Commandos para correr en orden:
+4. ABRIR EL CMD COMO ADMIN, y correr:
+	- ESTE PROYECTO NECESITO UNA VERSIÓN ESPECÍFICA DE NODE (16.14.2) PARA CORRER LA APP. <br>
+	- `nvm list` (para ver qué versiones de NODE tenemos y estamos corriendo ahora)
+	Vamos a instalar la versión que pide el proyecto con:<br>
+	`nvm install 16.14.2` (luego con nvm list chequeamos)
+	- COMANDO para USAR la versión del proyecto: <br>
+	`nvm use 16.14.2`
+	- Debería verse algo como: "Now using node v16.14.2 (64-bit)"
+
+5. Luego de Clonar el MONO-REPO localmente, se procede a Instalar TODAS las Dependencias FIJAS con YARN. <br>
+	- Correr en la terminal del proyecto,
+	simplemente: `yarn`
+	<br> (Esto tardará MUCHO tiempo, puede tomar hasta 1 hora inclusive, pero solo se hace una vez)
+
+6. Ahora, una vez finalizado la instalación, ejemplo de mensaje de éxito: 
+	```
+	[5/5] Building fresh packages...
+	$ husky install
+	husky - Git hooks installed
+	Done in 1771.83s.
+	````
+7. Ahora sí! procedemos a intentar levantar la App corriendo: 
+	<br>
+	``yarn dev``
+	<br> Preferiblemente cambiar los Puertos de localhost antes de ello (es Opcional).
+	<br> **Deberíamos esperar un tiempo significativo sin hacer nada en la terminal para que termine de compilar y levantar la App exitosamente y que aparezca este mensaje:**
+	```
+	[start:react] Compiled successfully!
+	[start:react]
+	[start:react] You can now view cypress-realworld-app in the browser.
+	[start:react]
+	[start:react]   Local:            http://localhost:5000
+	[start:react]   On Your Network:  http://192.168.0.112:5000
+	[start:react]
+	[start:react] Note that the development build is not optimized.
+	[start:react] To create a production build, use yarn build.
+	```
+8. **✅LISTO
+	<br> 🚀YA ES HORA DE COMENZAR LAS PRUEBAS!🤖🧪✅**
+___
+# Getting Started (official version)
 
 The Cypress Real-World App (RWA) is a full-stack Express/React application backed by a local JSON database ([lowdb]).
 

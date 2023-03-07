@@ -1,76 +1,70 @@
 export enum PaymentNotificationStatus {
-  requested = "requested",
-  received = "received",
-  incomplete = "incomplete",
+	requested = 'requested',
+	received = 'received',
+	incomplete = 'incomplete',
 }
 
 export enum NotificationsType {
-  payment = "payment",
-  like = "like",
-  comment = "comment",
+	payment = 'payment',
+	like = 'like',
+	comment = 'comment',
 }
 
 export interface NotificationBase {
-  id: string;
-  uuid: string;
-  userId: string;
-  transactionId: string;
-  isRead: boolean;
-  createdAt: Date;
-  modifiedAt: Date;
+	id: string;
+	uuid: string;
+	userId: string;
+	transactionId: string;
+	isRead: boolean;
+	createdAt: Date;
+	modifiedAt: Date;
 }
 
-export type NotificationUpdatePayload = Partial<Pick<NotificationBase, "id" | "isRead">>;
+export type NotificationUpdatePayload = Partial<Pick<NotificationBase, 'id' | 'isRead'>>;
 
 export interface PaymentNotification extends NotificationBase {
-  status: PaymentNotificationStatus;
+	status: PaymentNotificationStatus;
 }
 
 export interface LikeNotification extends NotificationBase {
-  likeId: string;
+	likeId: string;
 }
 
 export interface CommentNotification extends NotificationBase {
-  commentId: string;
+	commentId: string;
 }
 
 export interface PaymentNotificationResponseItem extends PaymentNotification {
-  userFullName: string;
+	userFullName: string;
 }
 
 export interface CommentNotificationResponseItem extends CommentNotification {
-  userFullName: string;
+	userFullName: string;
 }
 
 export interface LikeNotificationResponseItem extends LikeNotification {
-  userFullName: string;
+	userFullName: string;
 }
 
 export interface NotificationPayloadBase {
-  type: NotificationsType;
-  transactionId: string;
+	type: NotificationsType;
+	transactionId: string;
 }
 
 export interface PaymentNotificationPayload extends NotificationPayloadBase {
-  status: PaymentNotificationStatus;
+	status: PaymentNotificationStatus;
 }
 
 export interface LikeNotificationPayload extends NotificationPayloadBase {
-  likeId: string;
+	likeId: string;
 }
 
 export interface CommentNotificationPayload extends NotificationPayloadBase {
-  commentId: string;
+	commentId: string;
 }
 
 export type NotificationType = PaymentNotification | LikeNotification | CommentNotification;
 
-export type NotificationPayloadType =
-  | PaymentNotificationPayload
-  | LikeNotificationPayload
-  | CommentNotificationPayload;
+export type NotificationPayloadType = PaymentNotificationPayload | LikeNotificationPayload | CommentNotificationPayload;
 
-export type NotificationResponseItem =
-  | PaymentNotificationResponseItem
-  | LikeNotificationResponseItem
-  | CommentNotificationResponseItem;
+export type NotificationResponseItem = PaymentNotificationResponseItem | LikeNotificationResponseItem | CommentNotificationResponseItem;
